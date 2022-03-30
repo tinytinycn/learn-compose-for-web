@@ -1,3 +1,15 @@
+# 导航
+
+- 开始使用 Compose for Web
+- [模块介绍](doc/1-modules-intro.md)
+- [构建UI](doc/2-building-ui.md)
+- [事件处理](doc/3-event-handling.md)
+- [受控与非受控输入组件](doc/4-controlled-and-uncontrolled-inputs.md)
+- [Style DSL](doc/5-style-dsl.md)
+- [测试](doc/6-test-utils.md)
+
+----
+
 # 开始使用 Compose for Web
 
 在本教程中，我们将使用 Compose UI 框架创建一个简单的 Web UI 应用程序。
@@ -107,7 +119,7 @@ fun AppBody() {
     val counter = remember { mutableStateOf(0) }
     Div { Text("点击数: ${counter.value}") }
 
-    Button(attrs = { onClick { counter.value++ } }){
+    Button(attrs = { onClick { counter.value++ } }) {
         Text("点")
     }
 }
